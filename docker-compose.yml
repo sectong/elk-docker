@@ -1,0 +1,8 @@
+elk:
+  image: sectong/elk
+  ports:
+    - "80:80"
+    - "514/udp:1514/udp"
+  volumes:
+    - ./config:/etc/logstash
+    - ./data:/data
